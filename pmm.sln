@@ -5,7 +5,11 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pmm.mobile", "pmm.mobile\pmm.mobile.csproj", "{DEDBE3D6-02AB-4A42-A259-077E5EE7B564}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pmm.server", "pmm.server\pmm.server.csproj", "{B0CB3356-BD01-4BBE-AEE2-A41D15796A15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pmm.server", "pmm.server\pmm.server.csproj", "{B0CB3356-BD01-4BBE-AEE2-A41D15796A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pmm.data", "pmm.data\pmm.data.csproj", "{030FF1BA-9358-4BF8-9D3B-D5184C0A920B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pmm.core", "pmm.core\pmm.core.csproj", "{AF35CC90-6312-429A-9971-B143F55E3B7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,14 @@ Global
 		{B0CB3356-BD01-4BBE-AEE2-A41D15796A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0CB3356-BD01-4BBE-AEE2-A41D15796A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0CB3356-BD01-4BBE-AEE2-A41D15796A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{030FF1BA-9358-4BF8-9D3B-D5184C0A920B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030FF1BA-9358-4BF8-9D3B-D5184C0A920B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030FF1BA-9358-4BF8-9D3B-D5184C0A920B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030FF1BA-9358-4BF8-9D3B-D5184C0A920B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF35CC90-6312-429A-9971-B143F55E3B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF35CC90-6312-429A-9971-B143F55E3B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF35CC90-6312-429A-9971-B143F55E3B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF35CC90-6312-429A-9971-B143F55E3B7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

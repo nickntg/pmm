@@ -22,6 +22,8 @@ internal class MyBackgroundService : Service
     private bool _firstRun = true;
     private List<string> _ignoredFiles = [];
     private readonly List<QueuedFile> _queuedFiles = [];
+    private readonly JsonSerializerOptions _serializationOptions = new();
+
 
     public override IBinder OnBind(Intent intent)
     {
@@ -88,17 +90,17 @@ internal class MyBackgroundService : Service
             {
                 ImageContent = queued.Contents,
                 BatteryLevel = Battery.ChargeLevel,
-                RecordedAt = queued.ReadAt
+                RecordedAt = queued.ReadAt,
+                DeviceName = DeviceInfo.Current.Name
             };
 
             try
             {
                 using (var client = new HttpClient())
                 {
-                    var serializationOptions = new JsonSerializerOptions();
                     var uri = new Uri(Configuration.ServerUrl);
                     var result = await client.PostAsync(uri,
-                        new StringContent(JsonSerializer.Serialize<MobileDataDto>(data, serializationOptions),
+                        new StringContent(JsonSerializer.Serialize(data, _serializationOptions),
                             Encoding.UTF8, "application/json"));
 
                     if (!result.IsSuccessStatusCode)

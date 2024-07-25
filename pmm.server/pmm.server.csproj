@@ -6,4 +6,12 @@
     <ImplicitUsings>disable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\pmm.core\pmm.core.csproj" />
+  </ItemGroup>
+
 </Project>

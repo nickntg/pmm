@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace pmm.server.Models
+namespace pmm.core.Models
 {
     public class MobileDataDto
     {
